@@ -6,18 +6,18 @@ import CommentsList from '../features/comments/CommentsList';
 import SubHeader from '../components/SubHeader';
 
 const CampsiteDetailPage = () => {
-    const { campsiteId } = useParams();
-    const campsite = selectCampsiteById(campsiteId);
+  const { campsiteId } = useParams();
+  const campsite = selectCampsiteById(campsiteId);
 
-    return (
-        <Container>
-            <SubHeader current={campsite.name} detail={true} />
-            <Row>
-                <CampsiteDetail campsite={campsite} />
-                <CommentsList campsiteId={campsiteId} />
-            </Row>
-        </Container>
-    );
+  return (
+    <Container>
+      <SubHeader current={campsite.name} detail />
+      <Row>
+        <CampsiteDetail campsite={campsite} />
+        <CommentsList campsiteId={campsiteId} />
+      </Row>
+    </Container>
+  );
 };
 
 export default CampsiteDetailPage;

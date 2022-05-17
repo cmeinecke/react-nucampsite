@@ -1,7 +1,3 @@
-const ContactPage = () => {
-    return <div>
-        ContactPage
-    </div>
-};
+const ContactPage = () => <div>ContactPage</div>;
 
 export default ContactPage;
